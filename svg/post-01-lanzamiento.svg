@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="title desc">
+  <title id="title">Primer post de lanzamiento de Multi PRO</title>
+  <desc id="desc">Composición multicategoría con el monograma MP y los mensajes Variedad sin límites y Todo en un solo lugar.</desc>
+  <defs>
+    <style>
+      @font-face { font-family: 'Instrument Sans'; src: url('../fonts/InstrumentSans%5Bwdth,wght%5D.ttf') format('truetype'); }
+      .brand { font-family: 'Instrument Sans', sans-serif; }
+    </style>
+    <clipPath id="canvas"><rect width="1080" height="1350"/></clipPath>
+  </defs>
+  <g clip-path="url(#canvas)">
+    <image href="../assets/post-01-productos-base.png" width="1080" height="1350" preserveAspectRatio="xMidYMid slice"/>
+    <path d="M306 0h476l238 300-136 754-330 194-346-318 38-650Z" fill="#17211F" fill-opacity=".84"/>
+
+    <text class="brand" x="540" y="230" fill="#FFFFFF" font-size="28" letter-spacing="9" text-anchor="middle" style="font-variation-settings:'wght' 600,'wdth' 100">BIENVENIDOS A</text>
+
+    <g transform="translate(356 278) scale(.72)">
+      <path fill="#007F73" d="M40 88h84l52 56 52-56h84v336h-84V240l-52 52-52-52v184H40V88Z"/>
+      <path fill="#6F21F5" d="m176 292 52-52v184h-52V292Z"/>
+      <path fill="#FF5A3C" fill-rule="evenodd" d="M326 88h76c48 0 86 38 86 92s-38 92-86 92h-4v152h-72V88Zm72 64v56h8c18 0 30-10 30-28s-12-28-30-28h-8Z"/>
+    </g>
+
+    <text class="brand" x="332" y="748" fill="#FFFFFF" font-size="102" style="font-variation-settings:'wght' 700,'wdth' 90">Multi</text>
+    <text class="brand" x="584" y="748" fill="#FF5A3C" font-size="102" style="font-variation-settings:'wght' 700,'wdth' 90">PRO</text>
+    <text class="brand" x="540" y="838" fill="#FFFFFF" font-size="42" letter-spacing="8" text-anchor="middle" style="font-variation-settings:'wght' 600,'wdth' 100">VARIEDAD SIN LÍMITES</text>
+    <rect x="398" y="884" width="96" height="12" fill="#FF5A3C"/>
+    <text class="brand" x="520" y="901" fill="#FFFFFF" font-size="25" letter-spacing="6" style="font-variation-settings:'wght' 600,'wdth' 100">TODO EN UN SOLO LUGAR</text>
+
+    <rect x="256" y="1038" width="568" height="1" fill="#FFFFFF" fill-opacity=".42"/>
+    <text class="brand" x="540" y="1096" fill="#FFFFFF" font-size="22" letter-spacing="4" text-anchor="middle" style="font-variation-settings:'wght' 600,'wdth' 100">HOGAR · HERRAMIENTAS · TECNOLOGÍA</text>
+    <text class="brand" x="540" y="1138" fill="#FFFFFF" font-size="22" letter-spacing="4" text-anchor="middle" style="font-variation-settings:'wght' 600,'wdth' 100">Y MUCHO MÁS</text>
+  </g>
+</svg>

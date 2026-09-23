@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Manual de uso y descargas de la identidad visual de Multi PRO.">
+  <link rel="icon" href="./svg/logo-simbolo.svg" type="image/svg+xml">
+  <title>Multi PRO — Manual de identidad</title>
+  <style>
+    @font-face {
+      font-family: "Instrument Sans";
+      src: url("./fonts/InstrumentSans%5Bwdth,wght%5D.ttf") format("truetype-variations");
+      font-style: normal;
+      font-weight: 400 700;
+      font-stretch: 75% 100%;
+      font-display: swap;
+    }
+
+    :root {
+      --operation: #007f73;
+      --signal: #ff5a3c;
+      --violet: #6f21f5;
+      --ink: #17211f;
+      --white: #ffffff;
+      --line: #cbd4d1;
+      --muted: #576360;
+      color-scheme: light;
+      font-family: "Instrument Sans", Arial, sans-serif;
+      font-synthesis: none;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--white);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--white);
+      font-variation-settings: "wght" 400, "wdth" 100;
+      line-height: 1.5;
+    }
+
+    img { display: block; max-width: 100%; }
+    a { color: inherit; }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--signal);
+      outline-offset: 4px;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(260px, 23vw) minmax(0, 1fr);
+      min-height: 100vh;
+    }
+
+    .rail {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: clamp(28px, 4vw, 64px);
+      color: var(--white);
+      background: var(--operation);
+      overflow: auto;
+    }
+
+    .rail-mark {
+      width: min(180px, 70%);
+      margin-bottom: clamp(42px, 8vh, 90px);
+      border-radius: 50%;
+      background: var(--ink);
+    }
+
+    .rail h1 {
+      max-width: 9ch;
+      margin: 0;
+      font-size: clamp(2.4rem, 4.6vw, 5rem);
+      font-variation-settings: "wght" 700, "wdth" 88;
+      line-height: .93;
+      letter-spacing: -.045em;
+    }
+
+    .rail p {
+      max-width: 26ch;
+      margin: 24px 0 0;
+      color: var(--white);
+      font-size: 1rem;
+    }
+
+    .rail nav {
+      margin-top: auto;
+      padding-top: 48px;
+    }
+
+    .rail nav a {
+      display: block;
+      padding: 10px 0;
+      border-top: 1px solid rgba(255,255,255,.28);
+      text-decoration: none;
+      font-variation-settings: "wght" 600, "wdth" 96;
+    }
+
+    .rail nav a:last-child { border-bottom: 1px solid rgba(255,255,255,.28); }
+    .rail nav a:hover { color: var(--white); }
+
+    main { min-width: 0; }
+
+    .hero {
+      min-height: 72vh;
+      display: grid;
+      align-content: end;
+      padding: clamp(48px, 8vw, 128px);
+      border-bottom: 8px solid var(--violet);
+      background: var(--white);
+    }
+
+    .hero-lockup {
+      width: min(980px, 100%);
+      margin-bottom: clamp(54px, 10vw, 132px);
+    }
+
+    .hero-copy {
+      display: grid;
+      grid-template-columns: minmax(0, 1.5fr) minmax(220px, .7fr);
+      gap: 48px;
+      align-items: end;
+    }
+
+    .hero h2 {
+      max-width: 14ch;
+      margin: 0;
+      font-size: clamp(3rem, 7.2vw, 7.4rem);
+      font-variation-settings: "wght" 700, "wdth" 88;
+      line-height: .92;
+      letter-spacing: -.045em;
+    }
+
+    .hero p {
+      max-width: 35ch;
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(1.05rem, 1.5vw, 1.3rem);
+    }
+
+    .section {
+      padding: clamp(56px, 8vw, 120px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-heading {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(240px, .8fr);
+      gap: 48px;
+      align-items: end;
+      margin-bottom: 56px;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-size: clamp(2.2rem, 4.5vw, 4.6rem);
+      font-variation-settings: "wght" 700, "wdth" 90;
+      line-height: .98;
+      letter-spacing: -.035em;
+    }
+
+    .section-heading p {
+      max-width: 42ch;
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .preview-frame {
+      border: 1px solid var(--line);
+      background: var(--white);
+    }
+
+    .cover-preview {
+      aspect-ratio: 1640 / 624;
+      overflow: hidden;
+    }
+
+    .cover-preview img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .profile-row {
+      display: grid;
+      grid-template-columns: minmax(220px, 420px) minmax(0, 1fr);
+      gap: clamp(36px, 7vw, 96px);
+      align-items: center;
+      margin-top: 56px;
+    }
+
+    .profile-circle {
+      overflow: hidden;
+      border-radius: 50%;
+      border: 12px solid var(--white);
+      outline: 1px solid var(--line);
+      background: var(--ink);
+    }
+
+    .profile-notes h3,
+    .usage h3,
+    .file-list h3 {
+      margin: 0 0 16px;
+      font-size: 1.4rem;
+      font-variation-settings: "wght" 700, "wdth" 94;
+    }
+
+    .profile-notes ol,
+    .usage ol,
+    .usage ul {
+      margin: 0;
+      padding-left: 1.35rem;
+    }
+
+    .profile-notes li,
+    .usage li { margin: 10px 0; }
+
+    .logo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border: 1px solid var(--line);
+    }
+
+    .logo-panel {
+      min-height: 280px;
+      display: grid;
+      place-items: center;
+      padding: clamp(28px, 5vw, 72px);
+    }
+
+    .logo-panel + .logo-panel { border-left: 1px solid var(--line); }
+    .logo-panel.dark { background: var(--ink); }
+    .logo-panel img { width: min(620px, 100%); }
+
+    .palette {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(120px, 1fr));
+      border: 1px solid var(--line);
+    }
+
+    .swatch { min-width: 0; }
+    .swatch-color { height: 180px; }
+    .swatch-info { padding: 20px; border-top: 1px solid var(--line); }
+    .swatch + .swatch { border-left: 1px solid var(--line); }
+    .swatch strong { display: block; font-variation-settings: "wght" 600, "wdth" 96; }
+    .swatch code { color: var(--muted); }
+
+    .type-specimen {
+      padding: clamp(32px, 6vw, 80px);
+      color: var(--white);
+      background: var(--ink);
+      border-left: 10px solid var(--violet);
+    }
+
+    .type-wordmark {
+      margin: 0 0 48px;
+      font-size: clamp(4rem, 10vw, 10rem);
+      font-variation-settings: "wght" 700, "wdth" 90;
+      line-height: .9;
+      letter-spacing: -.04em;
+    }
+
+    .type-wordmark span { color: var(--signal); }
+    .type-rule { height: 4px; margin: 0 0 44px; background: var(--violet); }
+
+    .type-lines {
+      display: grid;
+      gap: 22px;
+    }
+
+    .type-lines p { margin: 0; }
+    .type-lines .title { color: var(--operation); font-size: clamp(1.8rem, 4vw, 3.8rem); font-variation-settings: "wght" 700, "wdth" 90; }
+    .type-lines .subtitle { font-size: clamp(1.35rem, 2.5vw, 2.4rem); font-variation-settings: "wght" 600, "wdth" 100; }
+    .type-lines .body { font-size: clamp(1.05rem, 1.7vw, 1.4rem); }
+
+    .usage-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--line);
+      border: 1px solid var(--line);
+    }
+
+    .usage {
+      padding: clamp(28px, 5vw, 56px);
+      background: var(--white);
+    }
+
+    .usage.do { border-top: 8px solid var(--operation); }
+    .usage.dont { border-top: 8px solid var(--signal); }
+
+    .downloads {
+      border-top: 1px solid var(--line);
+    }
+
+    .download-row {
+      display: grid;
+      grid-template-columns: minmax(180px, 1.2fr) minmax(180px, 1fr) auto;
+      gap: 28px;
+      align-items: center;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .download-row strong { font-variation-settings: "wght" 600, "wdth" 96; }
+    .download-row small { color: var(--muted); }
+
+    .button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 44px;
+      padding: 10px 18px;
+      color: var(--white);
+      background: var(--operation);
+      border: 0;
+      text-decoration: none;
+      font-variation-settings: "wght" 600, "wdth" 96;
+    }
+
+    .button:hover { background: var(--ink); }
+
+    .final-note {
+      padding: clamp(56px, 8vw, 120px);
+      color: var(--white);
+      background: var(--operation);
+      border-top: 12px solid var(--violet);
+    }
+
+    .final-note p {
+      max-width: 26ch;
+      margin: 0;
+      font-size: clamp(2.1rem, 5vw, 5rem);
+      font-variation-settings: "wght" 700, "wdth" 90;
+      line-height: 1;
+      letter-spacing: -.035em;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 28px clamp(32px, 8vw, 120px);
+      color: var(--white);
+      background: var(--ink);
+    }
+
+    footer p { margin: 0; }
+    footer a { color: var(--white); }
+
+    @media (max-width: 960px) {
+      .layout { display: block; }
+      .rail { position: static; height: auto; }
+      .rail-mark { width: 140px; margin-bottom: 36px; }
+      .rail h1 { max-width: 12ch; }
+      .rail nav { margin-top: 42px; }
+      .hero-copy,
+      .section-heading { grid-template-columns: 1fr; gap: 24px; }
+      .palette { grid-template-columns: repeat(2, 1fr); }
+      .swatch + .swatch { border-left: 0; }
+      .swatch:nth-child(even) { border-left: 1px solid var(--line); }
+      .swatch:nth-child(n+3) { border-top: 1px solid var(--line); }
+    }
+
+    @media (max-width: 700px) {
+      .rail { padding: 28px 24px; }
+      .rail-mark { width: 88px; margin-bottom: 20px; }
+      .rail h1 { max-width: none; font-size: 2.4rem; }
+      .rail p { margin-top: 12px; }
+      .rail nav { display: grid; grid-template-columns: 1fr 1fr; gap: 0 18px; margin-top: 28px; padding-top: 0; }
+      .hero,
+      .section { padding: 42px 24px; }
+      .hero { min-height: auto; }
+      .hero-lockup { margin-bottom: 64px; }
+      .profile-row,
+      .logo-grid,
+      .usage-grid { grid-template-columns: 1fr; }
+      .logo-panel + .logo-panel { border-left: 0; border-top: 1px solid var(--line); }
+      .download-row { grid-template-columns: 1fr; gap: 8px; }
+      .button { justify-self: start; }
+      footer { flex-direction: column; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="rail">
+      <img class="rail-mark" src="./png/facebook-perfil-1080.png" alt="Símbolo MP de Multi PRO sobre sello tinta">
+      <h1>Manual de identidad</h1>
+      <p>Archivos, reglas y ejemplos para aplicar Multi PRO con consistencia.</p>
+      <nav aria-label="Contenido">
+        <a href="#facebook">Facebook</a>
+        <a href="#logos">Logotipos</a>
+        <a href="#color">Color</a>
+        <a href="#tipografia">Tipografía</a>
+        <a href="#uso">Reglas de uso</a>
+        <a href="#descargas">Descargas</a>
+      </nav>
+    </aside>
+
+    <main>
+      <header class="hero">
+        <img class="hero-lockup" src="./svg/logo-horizontal.svg" alt="Multi PRO, variedad sin límites">
+        <div class="hero-copy">
+          <h2>Variedad que se reconoce.</h2>
+          <p>Un sistema directo, reproducible y enérgico para presentar productos de distintas categorías bajo una sola marca.</p>
+        </div>
+      </header>
+
+      <section class="section" id="facebook">
+        <div class="section-heading">
+          <h2>Aplicación en Facebook</h2>
+          <p>Estas son las dos piezas listas para subir. No añadas texto ni efectos adicionales.</p>
+        </div>
+
+        <div class="preview-frame cover-preview">
+          <img src="./png/facebook-portada-1640x624.png" alt="Portada de Facebook de Multi PRO">
+        </div>
+
+        <div class="profile-row">
+          <div class="profile-circle">
+            <img src="./png/facebook-perfil-1080.png" alt="Foto de perfil circular de Multi PRO">
+          </div>
+          <div class="profile-notes">
+            <h3>Cómo publicarlo</h3>
+            <ol>
+              <li>Sube <strong>facebook-perfil-1080.png</strong> como foto de perfil.</li>
+              <li>Sube la portada JPG para menor peso o la PNG para conservar máxima nitidez.</li>
+              <li>Revisa el recorte en teléfono y computadora antes de guardar.</li>
+              <li>Mantén el símbolo centrado; Facebook aplicará el recorte circular automáticamente.</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="logos">
+        <div class="section-heading">
+          <h2>Variantes del logo</h2>
+          <p>Usa la versión normal sobre fondos blancos o claros. La invertida está preparada para fondos oscuros.</p>
+        </div>
+        <div class="logo-grid">
+          <div class="logo-panel">
+            <img src="./png/logo-horizontal.png" alt="Logo horizontal de Multi PRO sobre fondo claro">
+          </div>
+          <div class="logo-panel dark">
+            <img src="./png/logo-horizontal-invertido.png" alt="Logo horizontal invertido de Multi PRO">
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="color">
+        <div class="section-heading">
+          <h2>Paleta de marca</h2>
+          <p>El verde y el coral sostienen la identidad; el violeta aparece como un acento pequeño y controlado dentro del símbolo.</p>
+        </div>
+        <div class="palette" aria-label="Paleta de colores">
+          <div class="swatch"><div class="swatch-color" style="background:#007f73"></div><div class="swatch-info"><strong>Verde operación</strong><code>#007F73</code></div></div>
+          <div class="swatch"><div class="swatch-color" style="background:#ff5a3c"></div><div class="swatch-info"><strong>Coral señal</strong><code>#FF5A3C</code></div></div>
+          <div class="swatch"><div class="swatch-color" style="background:#6f21f5"></div><div class="swatch-info"><strong>Violeta acento</strong><code>#6F21F5</code></div></div>
+          <div class="swatch"><div class="swatch-color" style="background:#17211f"></div><div class="swatch-info"><strong>Tinta</strong><code>#17211F</code></div></div>
+          <div class="swatch"><div class="swatch-color" style="background:#fff"></div><div class="swatch-info"><strong>Blanco</strong><code>#FFFFFF</code></div></div>
+        </div>
+      </section>
+
+      <section class="section" id="tipografia">
+        <div class="section-heading">
+          <h2>Instrument Sans</h2>
+          <p>Una sola familia sostiene el logotipo, mensajes comerciales, categorías, precios y fichas de producto.</p>
+        </div>
+        <div class="type-specimen">
+          <p class="type-wordmark">Multi <span>PRO</span></p>
+          <div class="type-rule"></div>
+          <div class="type-lines">
+            <p class="title">Variedad sin límites</p>
+            <p class="subtitle">Todo en un solo lugar</p>
+            <p class="body">Productos para distintas necesidades · Cotización C$ 18,450.00</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="uso">
+        <div class="section-heading">
+          <h2>Reglas de uso</h2>
+          <p>La consistencia hace que el sistema se perciba profesional. Estas reglas aplican a redes, catálogos, cotizaciones y rotulación.</p>
+        </div>
+        <div class="usage-grid">
+          <article class="usage do">
+            <h3>Usa</h3>
+            <ul>
+              <li>El símbolo solo cuando el espacio sea pequeño.</li>
+              <li>El logo horizontal en catálogos, facturas y presentaciones.</li>
+              <li>Instrument Sans en pesos 700, 600 y 400.</li>
+              <li>Los SVG para impresión, rótulos y formatos grandes.</li>
+              <li>Contraste alto y fondos planos.</li>
+            </ul>
+          </article>
+          <article class="usage dont">
+            <h3>Evita</h3>
+            <ul>
+              <li>Degradados, brillos, biseles y sombras.</li>
+              <li>Agregar más colores o subdividir el símbolo en nuevos fragmentos.</li>
+              <li>Estirar, inclinar o encerrar el logo.</li>
+              <li>Sustituir Instrument Sans por Montserrat, Arial o Inter.</li>
+              <li>Colocar información dentro del área de seguridad del símbolo.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section file-list" id="descargas">
+        <div class="section-heading">
+          <h2>Archivos disponibles</h2>
+          <p>Todos los enlaces funcionan sin conexión porque los recursos están incluidos en esta misma carpeta.</p>
+        </div>
+        <div class="downloads">
+          <div class="download-row"><div><strong>Foto de perfil</strong><br><small>1080 × 1080 px</small></div><small>Facebook y WhatsApp Business</small><a class="button" href="./png/facebook-perfil-1080.png" download>Descargar PNG</a></div>
+          <div class="download-row"><div><strong>Portada de Facebook</strong><br><small>1640 × 624 px</small></div><small>Versión de máxima nitidez</small><a class="button" href="./png/facebook-portada-1640x624.png" download>Descargar PNG</a></div>
+          <div class="download-row"><div><strong>Portada ligera</strong><br><small>1640 × 624 px</small></div><small>Menor peso para publicación</small><a class="button" href="./png/facebook-portada-1640x624.jpg" download>Descargar JPG</a></div>
+          <div class="download-row"><div><strong>Logo horizontal</strong><br><small>Vector editable</small></div><small>Impresión y documentos</small><a class="button" href="./svg/logo-horizontal.svg" download>Descargar SVG</a></div>
+          <div class="download-row"><div><strong>Símbolo MP</strong><br><small>Vector editable</small></div><small>Avatar, sello y tamaños pequeños</small><a class="button" href="./svg/logo-simbolo.svg" download>Descargar SVG</a></div>
+          <div class="download-row"><div><strong>Instrument Sans</strong><br><small>Variable 400–700 / 75–100</small></div><small>Fuente oficial incluida con licencia OFL</small><a class="button" href="./fonts/InstrumentSans%5Bwdth,wght%5D.ttf" download>Descargar TTF</a></div>
+          <div class="download-row"><div><strong>Guía de marca</strong><br><small>Documento de referencia</small></div><small>Concepto, reglas, archivos y estado</small><a class="button" href="./docs/GUIA-DE-MARCA.md">Abrir guía</a></div>
+          <div class="download-row"><div><strong>Investigación tipográfica</strong><br><small>Decisión documentada</small></div><small>Comparación y fuentes oficiales</small><a class="button" href="./docs/INVESTIGACION-TIPOGRAFICA.md">Abrir informe</a></div>
+        </div>
+      </section>
+
+      <section class="final-note">
+        <p>Primero claridad. Después consistencia. Los efectos no sustituyen ninguna de las dos.</p>
+      </section>
+
+      <footer>
+        <p>Multi PRO · Sistema visual aprobado</p>
+        <p><a href="./README.md">Leer el README</a> · <a href="./fonts/OFL.txt">Licencia de la fuente</a></p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

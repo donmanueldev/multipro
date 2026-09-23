@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="400" viewBox="0 0 1120 400" role="img" aria-labelledby="title desc">
+  <title id="title">Logo horizontal Multi PRO</title>
+  <desc id="desc">Monograma MP junto al nombre Multi PRO y el lema Variedad sin límites.</desc>
+  <defs>
+    <style>
+      @font-face { font-family: 'Instrument Sans'; src: url('../fonts/InstrumentSans%5Bwdth,wght%5D.ttf') format('truetype'); }
+    </style>
+  </defs>
+  <g transform="translate(10 -8) scale(.8)">
+    <path fill="#007F73" d="M40 88h84l52 56 52-56h84v336h-84V240l-52 52-52-52v184H40V88Z"/>
+    <path fill="#6F21F5" d="m176 292 52-52v184h-52V292Z"/>
+    <path fill="#FF5A3C" fill-rule="evenodd" d="M326 88h76c48 0 86 38 86 92s-38 92-86 92h-4v152h-72V88Zm72 64v56h8c18 0 30-10 30-28s-12-28-30-28h-8Z"/>
+  </g>
+  <text x="430" y="221" fill="#17211F" font-family="Instrument Sans, sans-serif" font-size="154" style="font-variation-settings:'wght' 700,'wdth' 90;font-feature-settings:'ss05' 1,'ss06' 1">Multi</text>
+  <text x="790" y="221" fill="#FF5A3C" font-family="Instrument Sans, sans-serif" font-size="154" style="font-variation-settings:'wght' 700,'wdth' 90;font-feature-settings:'ss05' 1,'ss06' 1">PRO</text>
+  <text x="438" y="282" fill="#007F73" font-family="Instrument Sans, sans-serif" font-size="28" letter-spacing="7" style="font-variation-settings:'wght' 600,'wdth' 100">VARIEDAD SIN LÍMITES</text>
+  <rect x="438" y="312" width="92" height="10" fill="#FF5A3C"/>
+  <text x="556" y="329" fill="#17211F" font-family="Instrument Sans, sans-serif" font-size="22" letter-spacing="6" style="font-variation-settings:'wght' 600,'wdth' 100">TODO EN UN SOLO LUGAR</text>
+</svg>

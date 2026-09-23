@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1640" height="624" viewBox="0 0 1640 624" role="img" aria-labelledby="title desc">
+  <title id="title">Portada de Facebook Multi PRO</title>
+  <desc id="desc">Portada de alto contraste para una marca de variedad de productos.</desc>
+  <defs>
+    <style>
+      @font-face { font-family: 'Instrument Sans'; src: url('../fonts/InstrumentSans%5Bwdth,wght%5D.ttf') format('truetype'); }
+    </style>
+  </defs>
+  <rect width="1640" height="624" fill="#17211F"/>
+  <path fill="#007F73" d="M0 0h260l180 244H0V0Zm1640 624h-390l390-390v390Z"/>
+  <path fill="#FF5A3C" d="M0 624V402l222-180 248 402H0Zm1640-624v206l-206 180-230-386h436Z"/>
+  <g transform="translate(418 88) scale(.7)">
+    <path fill="#007F73" d="M40 88h84l52 56 52-56h84v336h-84V240l-52 52-52-52v184H40V88Z"/>
+    <path fill="#6F21F5" d="m176 292 52-52v184h-52V292Z"/>
+    <path fill="#FF5A3C" fill-rule="evenodd" d="M326 88h76c48 0 86 38 86 92s-38 92-86 92h-4v152h-72V88Zm72 64v56h8c18 0 30-10 30-28s-12-28-30-28h-8Z"/>
+  </g>
+  <text x="782" y="274" fill="#FFFFFF" font-family="Instrument Sans, sans-serif" font-size="92" style="font-variation-settings:'wght' 700,'wdth' 90;font-feature-settings:'ss05' 1,'ss06' 1">Multi</text>
+  <text x="1000" y="274" fill="#FF5A3C" font-family="Instrument Sans, sans-serif" font-size="92" style="font-variation-settings:'wght' 700,'wdth' 90;font-feature-settings:'ss05' 1,'ss06' 1">PRO</text>
+  <text x="782" y="338" fill="#FFFFFF" font-family="Instrument Sans, sans-serif" font-size="26" letter-spacing="7" style="font-variation-settings:'wght' 600,'wdth' 100">VARIEDAD SIN LÍMITES</text>
+  <rect x="782" y="374" width="96" height="10" fill="#FF5A3C"/>
+  <text x="782" y="438" fill="#FFFFFF" font-family="Instrument Sans, sans-serif" font-size="24" letter-spacing="6" style="font-variation-settings:'wght' 600,'wdth' 100">TODO EN UN SOLO LUGAR</text>
+</svg>

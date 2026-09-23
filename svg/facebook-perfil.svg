@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Foto de perfil de Multi PRO</title>
+  <desc id="desc">Monograma verde, coral y violeta sobre fondo tinta, optimizado para recorte circular.</desc>
+  <rect width="1080" height="1080" fill="#17211F"/>
+  <g transform="translate(170 170) scale(1.4453125)">
+    <path fill="#007F73" d="M40 88h84l52 56 52-56h84v336h-84V240l-52 52-52-52v184H40V88Z"/>
+    <path fill="#6F21F5" d="m176 292 52-52v184h-52V292Z"/>
+    <path fill="#FF5A3C" fill-rule="evenodd" d="M326 88h76c48 0 86 38 86 92s-38 92-86 92h-4v152h-72V88Zm72 64v56h8c18 0 30-10 30-28s-12-28-30-28h-8Z"/>
+  </g>
+</svg>
