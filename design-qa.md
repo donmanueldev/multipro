@@ -51,6 +51,19 @@ La implementación conserva el monograma MP aprobado, la relación verde/coral c
 - No quedan hallazgos P0, P1 o P2.
 - La navegación a `#descargas` funcionó, las fuentes reportaron estado `loaded` y la consola no presentó errores.
 
+### Pase 3
+
+- La variante reversa horizontal quedó transparente, con M y lettering blancos; ya no genera una caja tinta al aplicarse.
+- Se añadió un lockup simplificado sin lemas para tamaños medianos y se verificó su render responsive en la guía.
+- La firma completa conserva ambos mensajes con tracking legible y sus masters de producción usan rutas vectoriales directas.
+
+### Pase 4 — documentación HTML
+
+- Se crearon páginas navegables para la guía de marca, el control técnico y el primer post; la investigación tipográfica permanece únicamente en Markdown.
+- La implementación conserva cinco referencias del manual aprobado: Instrument Sans, paleta exacta, fondos planos, bordes finos y jerarquía editorial compacta.
+- Las tres páginas se revisaron en Browser/IAB dentro del breakpoint responsive; la guía también se capturó en Chrome headless a 1440 × 1100. No presentan desbordamiento, recortes ni assets ausentes.
+- Se comprobaron cuatro documentos HTML y todos sus enlaces locales: cero referencias rotas.
+
 ## Hallazgos
 
 No hay diferencias P0, P1 o P2 pendientes. La adaptación del tablero aprobado a un manual editorial es intencional y conserva sus rasgos de marca.

@@ -14,10 +14,12 @@ El paquete está listo para uso digital. Los logos de producción, símbolos y w
 - `logo-simbolo-blanco.svg`: reverso monocromático blanco.
 - `logo-simbolo-monocromo.svg`: versión tinta a un color.
 - `logo-horizontal-contornos.svg`: lockup de producción sobre fondo claro.
-- `logo-horizontal-contornos-invertido.svg`: lockup de producción sobre fondo oscuro.
-- `wordmark-multi-contornos.svg`, `wordmark-pro-contornos.svg` y `wordmark-tagline-contornos.svg`: lettering convertido a curvas.
+- `logo-horizontal-contornos-invertido.svg`: firma completa reversa y transparente para fondo oscuro.
+- `logo-horizontal-simple-contornos.svg`: lockup simplificado para tamaños medianos.
+- `logo-horizontal-simple-contornos-invertido.svg`: lockup simplificado reverso y transparente.
+- `wordmark-multi-contornos.svg`, `wordmark-pro-contornos.svg`, `wordmark-tagline-contornos.svg` y `wordmark-subtagline-contornos.svg`: lettering convertido a curvas.
 
-Todos incluyen `viewBox`; los masters principales también declaran dimensiones nominales. Los lockups de producción incrustan el lettering vectorial y no requieren instalar Instrument Sans.
+Todos incluyen `viewBox`; los masters principales también declaran dimensiones nominales. Los lockups de producción contienen rutas vectoriales directas, no usan elementos `<image>`, no incrustan archivos base64 y no requieren instalar Instrument Sans.
 
 ## Fuentes editables con dependencias
 
@@ -27,6 +29,8 @@ Todos incluyen `viewBox`; los masters principales también declaran dimensiones 
 
 Estas fuentes deben mantenerse dentro de la estructura del paquete. Para publicar o entregar a un tercero, usar los PNG/JPG finales o los lockups en contornos.
 
+La descarga pública `InstrumentSans-MultiPRO.zip` agrupa el TTF oficial y `OFL.txt`; el archivo tipográfico original no se modificó.
+
 ## Exportaciones finales
 
 | Archivo | Dimensión | Estado |
@@ -35,10 +39,12 @@ Estas fuentes deben mantenerse dentro de la estructura del paquete. Para publica
 | `facebook-portada-1640x624.png` | 1640 × 624 | sRGB, 8 bits, opaco, texto principal en blanco |
 | `facebook-portada-1640x624.jpg` | 1640 × 624 | Calidad 92 para publicación ligera |
 | `logo-simbolo-1024.png` | 1024 × 1024 | sRGB, 8 bits, transparencia real |
-| `logo-horizontal.png` | 1680 × 600 | sRGB, 8 bits, transparencia real |
-| `logo-horizontal-invertido.png` | 1680 × 600 | sRGB, 8 bits, fondo tinta |
-| `logo-horizontal-produccion.png` | 2160 × 680 | Lockup compacto en contornos, transparente |
-| `logo-horizontal-produccion-invertido.png` | 2160 × 680 | Lockup compacto en contornos, fondo tinta |
+| `logo-horizontal.png` | 1680 × 529 | sRGB, 8 bits, transparencia real |
+| `logo-horizontal-invertido.png` | 1680 × 529 | sRGB, 8 bits, reverso con transparencia real |
+| `logo-horizontal-produccion.png` | 2160 × 680 | Firma completa en contornos, transparente |
+| `logo-horizontal-produccion-invertido.png` | 2160 × 680 | Firma completa reversa, transparente |
+| `logo-horizontal-simple.png` | 2080 × 520 | Lockup simplificado, transparente |
+| `logo-horizontal-simple-invertido.png` | 2080 × 520 | Lockup simplificado reverso, transparente |
 | `sistema-visual-v2.png` | 1920 × 1080 | Lámina plana reconstruida con los masters exactos |
 | `post-01-lanzamiento-1080x1350.png` | 1080 × 1350 | Arte principal listo para feed 4:5 |
 | `post-01-lanzamiento-1080x1080.png` | 1080 × 1080 | Adaptación cuadrada lista para feed 1:1 |
@@ -52,6 +58,10 @@ Estas fuentes deben mantenerse dentro de la estructura del paquete. Para publica
 5. La bajada verde de la portada cambió a blanco para mejorar la lectura en tamaño pequeño.
 6. La lámina visual anterior se reconstruyó sin degradados, sombras ni colores desviados.
 7. Los PNG se normalizaron a sRGB y 8 bits; el alpha se conserva solo cuando aporta transparencia.
+8. La variante reversa se unificó con M blanca y fondo transparente.
+9. Se agregó un lockup sin lemas para tamaños medianos.
+10. Los masters de producción ahora usan rutas directas en lugar de SVG incrustados en base64.
+11. La M verde sobre tinta se conserva únicamente como aplicación de gran formato; los archivos llamados “reverso” usan M blanca.
 
 ## Límites de la validación
 
