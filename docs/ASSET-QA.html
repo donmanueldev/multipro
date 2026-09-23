@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Control técnico de los assets de la identidad visual Multi PRO.">
+  <link rel="icon" href="../svg/logo-simbolo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./brand-docs.css">
+  <title>Multi PRO — Control técnico de assets</title>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand-link" href="../index.html">
+      <img src="../svg/logo-simbolo.svg" alt="">
+      <span>Documentación Multi PRO</span>
+    </a>
+    <nav class="site-nav" aria-label="Documentación">
+      <a href="../index.html">Manual</a>
+      <a href="./GUIA-DE-MARCA.html">Guía de marca</a>
+      <a href="./ASSET-QA.html" aria-current="page">Control de assets</a>
+      <a href="./POST-01-LANZAMIENTO.html">Post 01</a>
+    </nav>
+  </header>
+
+  <main class="doc-shell">
+    <aside class="toc" aria-label="Contenido del control técnico">
+      <strong>En esta página</strong>
+      <a href="#resultado">Resultado</a>
+      <a href="#masters">Masters portables</a>
+      <a href="#editables">Fuentes editables</a>
+      <a href="#exportaciones">Exportaciones</a>
+      <a href="#limites">Límites</a>
+    </aside>
+
+    <article class="doc">
+      <header class="doc-hero">
+        <figure class="asset-preview dark hero-mark">
+          <img src="../svg/logo-horizontal-simple-contornos-invertido.svg" alt="Lockup reverso de Multi PRO">
+        </figure>
+        <h1>Control técnico de assets</h1>
+        <p class="lead">Revisión estructural de SVG, PNG, JPG y piezas sociales. Fecha de control: 22 de septiembre de 2026.</p>
+      </header>
+
+      <section class="doc-section" id="resultado">
+        <h2>Resultado</h2>
+        <div class="status">
+          <strong>Paquete listo para uso digital</strong>
+          Los logos de producción, símbolos y wordmarks tienen alternativas vectoriales sin dependencia tipográfica; las piezas sociales cuentan con exportaciones sRGB de 8 bits en sus dimensiones finales.
+        </div>
+      </section>
+
+      <section class="doc-section" id="masters">
+        <h2>Masters vectoriales portables</h2>
+        <ul>
+          <li><code>logo-simbolo.svg</code>: versión principal a color.</li>
+          <li><code>logo-simbolo-invertido.svg</code>: M blanca, P coral y cuña violeta para fondo oscuro.</li>
+          <li><code>logo-simbolo-blanco.svg</code>: reverso monocromático blanco.</li>
+          <li><code>logo-simbolo-monocromo.svg</code>: versión tinta a un color.</li>
+          <li><code>logo-horizontal-contornos.svg</code>: firma de producción sobre fondo claro.</li>
+          <li><code>logo-horizontal-contornos-invertido.svg</code>: firma completa reversa y transparente.</li>
+          <li><code>logo-horizontal-simple-contornos.svg</code>: lockup simplificado para tamaños medianos.</li>
+          <li><code>logo-horizontal-simple-contornos-invertido.svg</code>: lockup simplificado reverso y transparente.</li>
+          <li>Los cuatro archivos <code>wordmark-*-contornos.svg</code> contienen el lettering convertido a curvas.</li>
+        </ul>
+        <p>Todos incluyen <code>viewBox</code>. Los lockups de producción contienen rutas vectoriales directas, no usan elementos <code>&lt;image&gt;</code>, no incrustan archivos base64 y no requieren instalar Instrument Sans.</p>
+      </section>
+
+      <section class="doc-section" id="editables">
+        <h2>Fuentes editables con dependencias</h2>
+        <ul>
+          <li><code>logo-horizontal.svg</code> y <code>logo-horizontal-invertido.svg</code> usan la fuente local para conservar el segundo mensaje editable.</li>
+          <li><code>facebook-portada.svg</code>, <code>sistema-visual.svg</code> y <code>post-01-lanzamiento.svg</code> usan Instrument Sans desde <code>fonts/</code>.</li>
+          <li><code>post-01-lanzamiento.svg</code> enlaza además <code>assets/post-01-productos-base.png</code>.</li>
+        </ul>
+        <p>Estas fuentes deben mantenerse dentro de la estructura del paquete. Para publicar o entregar a un tercero, usar los PNG/JPG finales o los lockups en contornos.</p>
+        <p>La descarga <code>InstrumentSans-MultiPRO.zip</code> agrupa el TTF oficial y <code>OFL.txt</code>; el archivo tipográfico original no se modificó.</p>
+      </section>
+
+      <section class="doc-section" id="exportaciones">
+        <h2>Exportaciones finales</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Archivo</th><th>Dimensión</th><th>Estado</th></tr></thead>
+            <tbody>
+              <tr><td><code>facebook-perfil-1080.png</code></td><td>1080 × 1080</td><td>sRGB, 8 bits, opaco, margen para recorte circular</td></tr>
+              <tr><td><code>facebook-portada-1640x624.png</code></td><td>1640 × 624</td><td>sRGB, 8 bits, opaco, texto principal en blanco</td></tr>
+              <tr><td><code>facebook-portada-1640x624.jpg</code></td><td>1640 × 624</td><td>Calidad 92 para publicación ligera</td></tr>
+              <tr><td><code>logo-simbolo-1024.png</code></td><td>1024 × 1024</td><td>sRGB, 8 bits, transparencia real</td></tr>
+              <tr><td><code>logo-horizontal.png</code></td><td>1680 × 529</td><td>sRGB, 8 bits, transparencia real</td></tr>
+              <tr><td><code>logo-horizontal-invertido.png</code></td><td>1680 × 529</td><td>sRGB, 8 bits, reverso con transparencia real</td></tr>
+              <tr><td><code>logo-horizontal-produccion.png</code></td><td>2160 × 680</td><td>Firma completa en contornos, transparente</td></tr>
+              <tr><td><code>logo-horizontal-produccion-invertido.png</code></td><td>2160 × 680</td><td>Firma completa reversa, transparente</td></tr>
+              <tr><td><code>logo-horizontal-simple.png</code></td><td>2080 × 520</td><td>Lockup simplificado, transparente</td></tr>
+              <tr><td><code>logo-horizontal-simple-invertido.png</code></td><td>2080 × 520</td><td>Lockup simplificado reverso, transparente</td></tr>
+              <tr><td><code>sistema-visual-v2.png</code></td><td>1920 × 1080</td><td>Lámina plana reconstruida con los masters exactos</td></tr>
+              <tr><td><code>post-01-lanzamiento-1080x1350.png</code></td><td>1080 × 1350</td><td>Arte principal listo para feed 4:5</td></tr>
+              <tr><td><code>post-01-lanzamiento-1080x1080.png</code></td><td>1080 × 1080</td><td>Adaptación cuadrada lista para feed 1:1</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="doc-section" id="limites">
+        <h2>Límites de la validación</h2>
+        <ul>
+          <li>La revisión confirma estructura, dimensiones, color, transparencia, copy y renderizado local.</li>
+          <li>El recorte definitivo de Facebook debe comprobarse después de subir los archivos a la plataforma.</li>
+          <li>Para uniformes, rótulos, vinil o empaques, todavía se recomienda una prueba física con el proveedor.</li>
+        </ul>
+      </section>
+
+      <footer class="doc-footer">
+        <span>Multi PRO · Control técnico</span>
+        <a href="./ASSET-QA.md">Ver fuente Markdown</a>
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
