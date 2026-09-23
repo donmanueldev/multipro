@@ -61,11 +61,16 @@ Ambos mensajes hablan de la promesa general de Multi PRO. Los nombres de categor
 
 - `logo-simbolo.svg`
 - `logo-simbolo-invertido.svg`
+- `logo-simbolo-blanco.svg`
 - `logo-simbolo-monocromo.svg`
 - `logo-horizontal.svg`
 - `logo-horizontal-invertido.svg`
+- `logo-horizontal-contornos.svg`
+- `logo-horizontal-contornos-invertido.svg`
 - `facebook-perfil.svg`
 - `facebook-portada.svg`
+- `sistema-visual.svg`
+- `post-01-lanzamiento.svg`
 - `wordmark-multi-contornos.svg`
 - `wordmark-pro-contornos.svg`
 - `wordmark-tagline-contornos.svg`
@@ -81,10 +86,19 @@ Ambos mensajes hablan de la promesa general de Multi PRO. Los nombres de categor
 - `facebook-portada-1640x624.png`
 - `facebook-portada-1640x624.jpg`
 - `logo-simbolo-1024.png`
+- `logo-simbolo-invertido-1024.png`
+- `logo-simbolo-blanco-1024.png`
+- `logo-simbolo-monocromo-1024.png`
 - `logo-horizontal.png`
 - `logo-horizontal-invertido.png`
+- `logo-horizontal-produccion.png`
+- `logo-horizontal-produccion-invertido.png`
 - `sistema-visual-v2.png`
 - `prueba-tipografica-instrument-sans.png`
+- `post-01-lanzamiento-1080x1350.png`
+- `post-01-lanzamiento-1080x1080.png`
+
+Los archivos `logo-horizontal-contornos*.svg` son los masters recomendados para imprenta, rotulación y entrega externa porque no dependen de fuentes instaladas. Los SVG de portada, sistema visual y post conservan texto vivo y se consideran fuentes editables; para publicación deben usarse sus PNG/JPG exportados.
 
 ## Estado
 
